@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="/">
+      <span class="brand-mark">B</span>
+      <span>
+        <strong>Blog Finder</strong>
+        <small>中文技术博主索引</small>
+      </span>
+    </a>
+
+    <div class="stats-strip" aria-label="数据状态">
+      <div>
+        <strong>{{ stats.total }}</strong>
+        <span>已收录</span>
+      </div>
+      <div>
+        <strong>{{ stats.verified }}</strong>
+        <span>已验证</span>
+      </div>
+      <div>
+        <strong>{{ stats.checked }}</strong>
+        <span>已检查</span>
+      </div>
+    </div>
+
+    <nav class="tag-nav" aria-label="分类">
+      <a class="tag-nav-item {% if not active_tag %}active{% endif %}" href="{{ page_url(tag='', page=1) }}">
+        <span>全部</span>
+        <b>{{ stats.total }}</b>
+      </a>
+      {% for tag in tag_counts %}
+        <a class="tag-nav-item {% if active_tag == tag.slug %}active{% endif %}" href="{{ page_url(tag=tag.slug, page=1) }}">
+          <span>{{ tag.name }}</span>
+          <b>{{ tag.count }}</b>
+        </a>
+      {% endfor %}
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <div class="topbar-copy">
+        <h1>中文高质量技术博主</h1>
+        <p>AI、Agent、全栈、后端、独立开发、加密货币与交易套利方向。</p>
+      </div>
+      <div class="topbar-tools">
+        <a class="author-link" href="https://github.com/rongweihe" target="_blank" rel="noreferrer">联系作者</a>
+        <form class="search-form" action="/" method="get">
+          <input type="hidden" name="tag" value="{{ active_tag }}">
+          <input type="search" name="q" value="{{ query }}" placeholder="搜索博主、主站、标签">
+          <select name="sort" aria-label="排序">
+            <option value="quality" {% if sort == "quality" %}selected{% endif %}>质量优先</option>
+            <option value="recent" {% if sort == "recent" %}selected{% endif %}>最近更新</option>
+            <option value="name" {% if sort == "name" %}selected{% endif %}>名称排序</option>
+          </select>
+          <select name="page_size" aria-label="每页数量">
+            {% for size in [12, 24, 48, 96] %}
+              <option value="{{ size }}" {% if page_size == size %}selected{% endif %}>{{ size }}/页</option>
+            {% endfor %}
+          </select>
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </header>
+
+    <section class="tabs" aria-label="主要方向">
+      {% for tab in tabs %}
+        <a class="tab {% if active_tag == tab.slug %}active{% endif %}" href="{{ page_url(tag=tab.slug, page=1) }}">
+          <span>{{ tab.name }}</span>
+          <b>{{ tab.count }}</b>
+        </a>
+      {% endfor %}
+    </section>
+
+    <section class="result-meta">
+      <span>显示 {{ pagination.start }}-{{ pagination.end }} / {{ pagination.total }}</span>
+      {% if query %}
+        <a href="{{ page_url(q='', page=1) }}">清除搜索</a>
+      {% endif %}
+    </section>
+
+    {% if bloggers %}
+      <section class="blog-grid" aria-label="博主列表">
+        {% for blogger in bloggers %}
+          {% include "partials/blogger_card.html" %}
+        {% endfor %}
+      </section>
+    {% else %}
+      <section class="empty-state">
+        <h2>没有匹配结果</h2>
+        <p>换一个关键词或分类试试。</p>
+        <a href="/">查看全部</a>
+      </section>
+    {% endif %}
+
+    <nav class="pagination" aria-label="分页">
+      <a class="{% if pagination.page == 1 %}disabled{% endif %}" href="{{ page_url(page=pagination.prev_page) }}">上一页</a>
+      <span>{{ pagination.page }} / {{ pagination.total_pages }}</span>
+      <a class="{% if pagination.page == pagination.total_pages %}disabled{% endif %}" href="{{ page_url(page=pagination.next_page) }}">下一页</a>
+    </nav>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Copyright © ronweihe 2026</strong>
+        <span>本地优先的中文技术博主发现站</span>
+      </div>
+      <p>数据来自手工种子、GitHub blog-list、Forever Blog 和友链发现；最近更新状态由 RSS、sitemap 与页面日期辅助判断。</p>
+    </footer>
+  </main>
+</div>
+{% endblock %}

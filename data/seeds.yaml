@@ -1,0 +1,626 @@
+tags:
+  - slug: ai
+    name: AI
+    group: topic
+    order: 10
+  - slug: agent
+    name: Agent
+    group: topic
+    order: 11
+  - slug: fullstack
+    name: 全栈
+    group: topic
+    order: 20
+  - slug: frontend
+    name: 前端
+    group: topic
+    order: 21
+  - slug: backend
+    name: 后端
+    group: topic
+    order: 22
+  - slug: indie
+    name: 独立开发
+    group: topic
+    order: 30
+  - slug: product
+    name: 产品
+    group: topic
+    order: 31
+  - slug: crypto
+    name: 加密货币
+    group: topic
+    order: 40
+  - slug: trading
+    name: 交易套利
+    group: topic
+    order: 41
+  - slug: infra
+    name: 工程基础设施
+    group: topic
+    order: 50
+  - slug: opensource
+    name: 开源
+    group: topic
+    order: 51
+  - slug: python
+    name: Python
+    group: language
+    order: 60
+  - slug: go
+    name: Go
+    group: language
+    order: 61
+  - slug: rust
+    name: Rust
+    group: language
+    order: 62
+  - slug: java
+    name: Java
+    group: language
+    order: 63
+  - slug: css
+    name: CSS
+    group: frontend
+    order: 70
+  - slug: swift
+    name: Swift
+    group: language
+    order: 71
+  - slug: newsletter
+    name: 周刊
+    group: format
+    order: 80
+  - slug: personal
+    name: 个人博客
+    group: format
+    order: 81
+
+bloggers:
+  - slug: ruanyifeng
+    name: 阮一峰
+    site_name: 阮一峰的网络日志
+    site_url: https://www.ruanyifeng.com/blog/
+    rss_url: https://www.ruanyifeng.com/blog/atom.xml
+    github_url: https://github.com/ruanyf
+    twitter_url: https://x.com/ruanyf
+    description: 长期写作的中文技术博客，覆盖 Web、工程实践、开源生态和科技趋势，周刊影响力很高。
+    tags: [fullstack, frontend, backend, opensource, newsletter, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 96
+
+  - slug: zhangxinxu
+    name: 张鑫旭
+    site_name: 鑫空间-鑫生活
+    site_url: https://www.zhangxinxu.com/wordpress/
+    rss_url: https://www.zhangxinxu.com/wordpress/feed/
+    github_url: https://github.com/zhangxinxu
+    description: 前端与 CSS 深度文章代表性作者，内容以浏览器、交互细节、CSS 实践和工程经验为主。
+    tags: [frontend, css, fullstack, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 94
+
+  - slug: antfu
+    name: Anthony Fu
+    site_name: Anthony Fu
+    site_url: https://antfu.me/
+    rss_url: https://antfu.me/feed.xml
+    github_url: https://github.com/antfu
+    twitter_url: https://x.com/antfu7
+    description: Vue、Vite、UnoCSS 等开源生态活跃贡献者，写作覆盖前端工具链、开源维护与工程效率。
+    tags: [frontend, fullstack, opensource, ai]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 94
+
+  - slug: innei
+    name: Innei
+    site_name: Innei
+    site_url: https://innei.in/
+    github_url: https://github.com/Innei
+    description: 个人产品与全栈工程博客，关注 Web 应用、前端体验、服务端实现和独立项目。
+    tags: [fullstack, frontend, indie, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 88
+
+  - slug: diygod
+    name: DIYgod
+    site_name: DIYgod
+    site_url: https://diygod.cc/
+    rss_url: https://diygod.cc/atom.xml
+    github_url: https://github.com/DIYgod
+    twitter_url: https://x.com/DIYgod
+    description: 开源项目和个人产品活跃作者，内容覆盖前端、播客、RSS、独立开发和 Web 工具。
+    tags: [frontend, fullstack, indie, opensource, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 90
+
+  - slug: imaeegoo
+    name: iMaeGoo
+    site_name: iMaeGoo's Blog
+    site_url: https://www.imaegoo.com/
+    github_url: https://github.com/iMaeGoo
+    description: 偏前端和个人站建设的独立博客，也记录工具、主题、效率和日常工程经验。
+    tags: [frontend, fullstack, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: sukka
+    name: Sukka
+    site_name: Sukka's Blog
+    site_url: https://blog.skk.moe/
+    github_url: https://github.com/SukkaW
+    twitter_url: https://x.com/SukkaW
+    description: 关注前端、网络、性能、基础设施和自托管实践，文章技术密度较高。
+    tags: [frontend, infra, opensource, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 88
+
+  - slug: wuchong
+    name: 吴冲
+    site_name: Jark's Blog
+    site_url: https://wuchong.me/
+    github_url: https://github.com/wuchong
+    description: 后端与实时计算方向博客，长期关注 Flink、数据处理、分布式系统和工程实践。
+    tags: [backend, java, infra, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 86
+
+  - slug: didispace
+    name: 程序猿DD
+    site_name: 程序猿DD
+    site_url: https://blog.didispace.com/
+    github_url: https://github.com/dyc87112
+    description: Java、Spring、微服务和后端工程文章较多，也有技术社区和知识产品实践。
+    tags: [backend, java, infra, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 84
+
+  - slug: liaoxuefeng
+    name: 廖雪峰
+    site_name: 廖雪峰的官方网站
+    site_url: https://www.liaoxuefeng.com/
+    github_url: https://github.com/michaelliao
+    description: 经典中文编程教程与技术文章站点，覆盖 Python、Java、Git、JavaScript 等基础与工程主题。
+    tags: [backend, python, java, frontend, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 86
+
+  - slug: codingnow
+    name: 云风
+    site_name: 云风的 BLOG
+    site_url: https://blog.codingnow.com/
+    description: 资深工程师个人博客，长期记录系统设计、服务端、游戏开发、Lua/C 和工程思考。
+    tags: [backend, infra, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 84
+
+  - slug: kexuefm
+    name: 苏剑林
+    site_name: 科学空间
+    site_url: https://kexue.fm/
+    description: 机器学习、自然语言处理、数学推导和深度学习方向的高质量中文技术博客。
+    tags: [ai, backend, python, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 92
+
+  - slug: zhangjunlin
+    name: 张俊林
+    site_name: 张俊林的博客
+    site_url: https://www.zhangjunlin.com/
+    description: NLP、推荐系统、搜索和大模型方向技术文章，偏算法、模型和行业技术观察。
+    tags: [ai, backend, python]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 86
+
+  - slug: baoyu
+    name: 宝玉
+    site_name: 宝玉的分享
+    site_url: https://baoyu.io/
+    twitter_url: https://x.com/dotey
+    description: 持续分享 AI、Agent、产品工程和开发者工具相关内容，适合作为 AI 应用方向入口。
+    tags: [ai, agent, product, newsletter, indie]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 88
+
+  - slug: xxchan
+    name: xxchan
+    site_name: xxchan blog
+    site_url: https://xxchan.me/
+    github_url: https://github.com/xxchan
+    description: 关注 AI 编程、Agent、独立开发和工程效率的个人博客，内容偏实践和工具链。
+    tags: [ai, agent, indie, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: onevcat
+    name: 王巍
+    site_name: OneV's Den
+    site_url: https://onevcat.com/
+    github_url: https://github.com/onevcat
+    twitter_url: https://x.com/onevcat
+    description: iOS、Swift、工程实践和开发者工具方向长期写作者，也会记录 AI 辅助开发体验。
+    tags: [swift, opensource, ai, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 90
+
+  - slug: mofei
+    name: Mofei
+    site_name: Mofei's Life Blog
+    site_url: https://www.mofei.life/
+    github_url: https://github.com/mofei
+    description: 全栈、数据可视化、AI 应用和个人项目方向博客，内容偏产品化和工程实现。
+    tags: [ai, fullstack, frontend, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: conardli
+    name: ConardLi
+    site_name: ConardLi 的 blog
+    site_url: https://www.conardli.top/
+    github_url: https://github.com/ConardLi
+    description: 前端、JavaScript、工程化和 AI 相关实践文章，内容覆盖面广，适合全栈前端方向。
+    tags: [frontend, fullstack, ai, newsletter]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 84
+
+  - slug: pseudoyu
+    name: Pseudoyu
+    site_name: Pseudoyu
+    site_url: https://www.pseudoyu.com/
+    github_url: https://github.com/pseudoyu
+    twitter_url: https://x.com/pseudoyu
+    description: 区块链工程、后端开发、开源工具和个人知识管理方向博客，Web3 内容占比较高。
+    tags: [crypto, backend, opensource, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 88
+
+  - slug: bmpi
+    name: BMPI
+    site_name: BMPI
+    site_url: https://www.bmpi.dev/
+    github_url: https://github.com/bmpi-dev
+    twitter_url: https://x.com/bmpi
+    description: 独立开发、全栈、投资研究和产品实践博客，适合作为交易与投资类候选源继续验证。
+    tags: [indie, fullstack, product, trading]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 86
+
+  - slug: xuanwo
+    name: Xuanwo
+    site_name: Xuanwo's Blog
+    site_url: https://xuanwo.io/
+    github_url: https://github.com/Xuanwo
+    description: Rust、开源基础设施、存储系统和工程实践方向博客，技术深度和开源活跃度都较高。
+    tags: [backend, rust, infra, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 88
+
+  - slug: frostming
+    name: Frost Ming
+    site_name: Frost's Blog
+    site_url: https://frostming.com/
+    github_url: https://github.com/frostming
+    description: Python 生态、包管理、开源维护和后端工程经验，偏工具链与实践。
+    tags: [python, backend, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 84
+
+  - slug: draveness
+    name: Draven
+    site_name: Draveness
+    site_url: https://draven.co/
+    github_url: https://github.com/draveness
+    description: Go、分布式系统、数据库、容器和工程底层原理方向的高质量技术文章。
+    tags: [backend, go, infra, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 90
+
+  - slug: halfrost
+    name: Halfrost
+    site_name: Halfrost-Field
+    site_url: https://halfrost.com/
+    github_url: https://github.com/halfrost
+    description: Go、算法、分布式系统、云原生和工程实践方向博客，文章体系化程度高。
+    tags: [backend, go, infra, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 86
+
+  - slug: colobu
+    name: 鸟窝
+    site_name: 鸟窝
+    site_url: https://colobu.com/
+    github_url: https://github.com/smallnest
+    description: Go、并发编程、RPC、中间件和后端基础设施文章丰富，偏工程实践和源码分析。
+    tags: [backend, go, infra]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 84
+
+  - slug: mritd
+    name: mritd
+    site_name: mritd blog
+    site_url: https://mritd.com/
+    github_url: https://github.com/mritd
+    description: Kubernetes、容器、网络和云原生基础设施方向博客，适合后端和平台工程分类。
+    tags: [infra, backend, go, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: pdai
+    name: pdai
+    site_name: Java 全栈知识体系
+    site_url: https://pdai.tech/
+    github_url: https://github.com/realpdai
+    description: Java、架构、数据库、分布式和全栈知识体系站点，适合作为后端学习型技术源。
+    tags: [backend, java, fullstack, infra]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: javaguide
+    name: JavaGuide
+    site_name: JavaGuide
+    site_url: https://javaguide.cn/
+    github_url: https://github.com/Snailclimb/JavaGuide
+    description: Java 后端知识库和技术文章站点，覆盖面广，适合作为后端和面试体系入口。
+    tags: [backend, java, infra, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: bugstack
+    name: 小傅哥
+    site_name: bugstack 虫洞栈
+    site_url: https://bugstack.cn/
+    github_url: https://github.com/fuzhengwei
+    description: Java、架构、源码、DDD 和项目实战方向博客，内容偏体系化工程训练。
+    tags: [backend, java, fullstack, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 84
+
+  - slug: crossoverjie
+    name: crossoverJie
+    site_name: crossoverJie's Blog
+    site_url: https://crossoverjie.top/
+    github_url: https://github.com/crossoverJie
+    description: Java、Go、分布式系统、性能和后端工程实践博客，内容偏真实项目经验。
+    tags: [backend, java, go, infra]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: huxpro
+    name: Hux
+    site_name: Hux Blog
+    site_url: https://huangxuan.me/
+    github_url: https://github.com/Huxpro
+    description: 前端、产品、工程实践和个人成长方向博客，站点设计和内容整理都比较成熟。
+    tags: [frontend, fullstack, product, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 80
+
+  - slug: barretlee
+    name: Barret Lee
+    site_name: 小胡子哥的个人网站
+    site_url: https://barretlee.com/
+    github_url: https://github.com/barretlee
+    description: 前端工程、JavaScript、浏览器和 Web 性能方向博客，早期高质量文章积累很多。
+    tags: [frontend, fullstack, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 80
+
+  - slug: justjavac
+    name: 迷渡
+    site_name: justjavac
+    site_url: https://justjavac.com/
+    github_url: https://github.com/justjavac
+    description: JavaScript、前端、Deno、开源和工程实践方向博客，长期参与中文技术社区。
+    tags: [frontend, opensource, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 80
+
+  - slug: lepture
+    name: Hsiaoming Yang
+    site_name: Lepture
+    site_url: https://lepture.com/zh/
+    github_url: https://github.com/lepture
+    twitter_url: https://x.com/lepture
+    description: Python、Flask、OAuth、开源项目和 Web 后端方向博客，内容兼具工程和产品味道。
+    tags: [python, backend, opensource, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: vinta
+    name: Vinta Chen
+    site_name: Vinta Software
+    site_url: https://vinta.ws/code/
+    github_url: https://github.com/vinta
+    description: Python、Django、后端、DevOps 和创业工程经验博客，文章多为实战笔记。
+    tags: [python, backend, infra, indie]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 82
+
+  - slug: reorx
+    name: Reorx
+    site_name: Reorx's Forge
+    site_url: https://reorx.com/
+    github_url: https://github.com/reorx
+    description: Python、Web 工具、独立项目和个人数字生活方向博客，适合独立开发分类继续跟踪。
+    tags: [python, fullstack, indie, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 80
+
+  - slug: tualatrix
+    name: TualatriX
+    site_name: I'm TualatriX
+    site_url: https://imtx.me/
+    github_url: https://github.com/tualatrix
+    description: 独立开发、Linux、产品和个人软件方向博客，代表项目包括桌面应用和工具产品。
+    tags: [indie, product, fullstack, opensource]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78
+
+  - slug: greatdk
+    name: 王登科
+    site_name: GreatDK
+    site_url: https://greatdk.com/
+    description: 独立开发、产品构建、个人项目和数字生活方向博客，适合 indie hacker 分类。
+    tags: [indie, product, fullstack, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78
+
+  - slug: livid
+    name: Livid
+    site_name: Livid
+    site_url: https://livid.v2ex.com/
+    github_url: https://github.com/livid
+    description: V2EX 创始人的个人站点，长期关注社区产品、独立项目、软件和开发者文化。
+    tags: [indie, product, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 80
+
+  - slug: oldj
+    name: oldj
+    site_name: oldj.net
+    site_url: https://oldj.net/
+    github_url: https://github.com/oldj
+    description: 独立开发、Web 工程、AI 工具和个人项目方向博客，内容偏实用产品和开发体验。
+    tags: [indie, fullstack, ai, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78
+
+  - slug: lutaonan
+    name: Randy
+    site_name: Randy's Blog
+    site_url: https://lutaonan.com/
+    github_url: https://github.com/lutaonan
+    description: 前端、全栈、独立项目和开发者工具方向博客，文章偏工程实践与个人产品。
+    tags: [frontend, fullstack, indie, product]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78
+
+  - slug: shixiangwang
+    name: 王诗翔
+    site_name: 王诗翔
+    site_url: https://shixiangwang.github.io/
+    github_url: https://github.com/ShixiangWang
+    description: 生物信息、数据科学、R/Python 和科研工程方向博客，部分内容与机器学习和数据分析相关。
+    tags: [ai, python, backend, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78
+
+  - slug: greyli
+    name: 李辉
+    site_name: Grey Li
+    site_url: https://greyli.com/
+    github_url: https://github.com/greyli
+    description: Python、Flask、Web 后端和开源维护方向博客，适合 Python Web 工程分类。
+    tags: [python, backend, opensource, fullstack]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 80
+
+  - slug: alswl
+    name: 苏洋
+    site_name: Log4D
+    site_url: https://blog.alswl.com/
+    github_url: https://github.com/alswl
+    description: 后端、架构、DevOps、效率工具和工程管理方向博客，文章偏实践和复盘。
+    tags: [backend, infra, fullstack, personal]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78
+
+  - slug: jiajunhuang
+    name: 黄嘉俊
+    site_name: Jiajun's Blog
+    site_url: https://jiajunhuang.com/
+    github_url: https://github.com/jiajunhuang
+    description: 后端、Go、Python、Linux 和工程实践方向博客，内容以问题记录和系统经验为主。
+    tags: [backend, go, python, infra]
+    source_name: manual_seed
+    source_url: https://github.com/qianguyihao/blog-list
+    status: candidate
+    quality_score: 78

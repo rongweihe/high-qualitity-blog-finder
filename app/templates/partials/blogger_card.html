@@ -1,0 +1,48 @@
+<article class="blog-card">
+  <a class="thumb" href="{{ blogger.site_url }}" target="_blank" rel="noreferrer" aria-label="打开 {{ blogger.site_name }}">
+    <img src="{{ blogger.thumbnail_url }}" alt="{{ blogger.site_name }} 缩略图" loading="lazy">
+  </a>
+
+  <div class="blog-card-body">
+    <div class="card-heading">
+      <div>
+        <h2><a href="{{ blogger.site_url }}" target="_blank" rel="noreferrer">{{ blogger.site_name }}</a></h2>
+        <span>{{ blogger.name }}</span>
+      </div>
+      <mark class="status {{ blogger.status }}">{{ "已验证" if blogger.status == "verified" else "候选" }}</mark>
+    </div>
+
+    <p>{{ blogger.description }}</p>
+
+    <div class="tag-list" aria-label="标签">
+      {% for tag in blogger.tags[:5] %}
+        <a href="{{ page_url(tag=tag.slug, page=1) }}">{{ tag.name }}</a>
+      {% endfor %}
+    </div>
+
+    <div class="card-footer">
+      <span class="freshness">
+        {% if blogger.last_post_at %}
+          更新 {{ blogger.last_post_at }}
+          {% if blogger.recency_source %}
+            · {{ blogger.recency_source }}
+          {% endif %}
+        {% else %}
+          待验证
+        {% endif %}
+      </span>
+      <div class="links">
+        <a href="{{ blogger.site_url }}" target="_blank" rel="noreferrer">主站</a>
+        {% if blogger.rss_url %}
+          <a href="{{ blogger.rss_url }}" target="_blank" rel="noreferrer">RSS</a>
+        {% endif %}
+        {% if blogger.github_url %}
+          <a href="{{ blogger.github_url }}" target="_blank" rel="noreferrer">GitHub</a>
+        {% endif %}
+        {% if blogger.twitter_url %}
+          <a href="{{ blogger.twitter_url }}" target="_blank" rel="noreferrer">X</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>
