@@ -40,7 +40,7 @@ python3 -m app.verify --limit 40 --recent-since 2025-04-26
 - 给 Forever Blog 和友链采集器加详情页缓存
 
 ## 效果图
-![效果图](./data/preview.png)
+![效果图](https://img.cdn1.vip/i/69edf3e3a76f7_1777202147.webp)
 ## 更新
 ```bash
 git remote add origin git@github.com:rongweihe/high-qualitity-blog-finder.git
